@@ -1,1 +1,1 @@
-# Simple GO webapp for testing purpose
+# Simple GO webapp for container/pod testing purposes
