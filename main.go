@@ -12,7 +12,7 @@ var serviceName string
 
 func main() {
 	log.SetOutput(os.Stderr)
-	serviceName = "sinple-webapp-go"
+	serviceName = "simple-webapp-go"
 	if os.Getenv("SERVICE_NAME") != "" {
 		serviceName = os.Getenv("SERVICE_NAME")
 	}
