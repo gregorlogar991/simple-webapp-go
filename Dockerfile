@@ -7,7 +7,7 @@ RUN GOOS=linux go build -v -o webapp
 RUN chmod +x webapp
 CMD ["webapp"]
 
-FROM scratch
+FROM scratch as final
 COPY --from=build /src/webapp /usr/local/bin/webapp
 EXPOSE 8080
 CMD ["webapp"]
